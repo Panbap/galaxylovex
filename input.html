@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website Lovely - nơi chia sẻ tình yêu thương.">
+  <title>Galaxy love 2.0</title>
+  <link rel="icon" href="https://github.com/Panbap/anh/blob/main/icon1.png?raw=true" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Panbap/fonts@new/font.css">
+  <script src="https://cdn.jsdelivr.net/gh/Panbap/js/file/cry.min.js"></script>
+</head>
+
+<body>
+  <div id="loading-screen">
+    <div class="spinner"></div>
+    <div>Loading...</div>
+  </div>
+  <div class="container">
+    <h1>Tạo tinh cầu ảnh</h1>
+
+    <div class="instructions">
+      Nhập một hoặc nhiều link (URL), ngăn cách bằng dấu phẩy ( , ) hoặc xuống dòng.<br />
+      Ví dụ:<br />
+      <code>https://devpan.com/anh1.jpg, https://devpan.com/anh2.png</code>
+    </div>
+
+    <label for="upload-imgbb" class="custom-upload-button">📷 Upload ảnh</label>
+    <input type="file" id="upload-imgbb" accept="image/*" multiple hidden>
+
+    <textarea id="image-links" rows="5" placeholder="Nhập link ảnh tại đây..."></textarea><br />
+    <button id="generate-link" class="btn-generate">Tạo link</button>
+    <div id="created-link"></div>
+    <div id="preview"></div>
+
+    <div id="captcha-popup">
+      <div>
+        <h3>Vui lòng nhập CAPTCHA</h3>
+        <div style="margin:15px 0; display: flex; align-items: center; gap: 10px;">
+          <span id="captcha-code"></span>
+          <button id="refresh-captcha" title="Làm mới CAPTCHA">🔄</button>
+        </div>
+        <input type="text" id="captcha-input" placeholder="Nhập mã xác thực.." autocomplete="off" />
+        <div id="captcha-error"></div>
+        <button id="captcha-submit">Xác nhận</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 DevPan. A personal creation.</p>
+  </footer>
+
+  <script src="./assets/script.js"> </script>
+  <script>
+    function _0x3341() { const _0x15668f = ['4251513oNWDEe', '8snMTnX', 'Utf8', '7713444FscGoJ', '869334inevXd', '9829600ifzUsY', '397745QuVENY', 'preventDefault', '1402430nPNsuU', 'toString', 'AES', '13610979atmfvX', 'decrypt', '10IuHPTZ', '6FtObkP', 'contextmenu', 'enc']; _0x3341 = function () { return _0x15668f; }; return _0x3341(); } const _0x190bd1 = _0x5442; function _0x5442(_0x352212, _0x24d230) { const _0x3341e8 = _0x3341(); return _0x5442 = function (_0x5442e3, _0x1574b8) { _0x5442e3 = _0x5442e3 - 0x10d; let _0x136683 = _0x3341e8[_0x5442e3]; return _0x136683; }, _0x5442(_0x352212, _0x24d230); } (function (_0xe69d29, _0x5e403b) { const _0x21a125 = _0x5442, _0x465ea1 = _0xe69d29(); while (!![]) { try { const _0x1d02e6 = parseInt(_0x21a125(0x116)) / 0x1 + parseInt(_0x21a125(0x11c)) / 0x2 * (parseInt(_0x21a125(0x112)) / 0x3) + -parseInt(_0x21a125(0x10f)) / 0x4 * (-parseInt(_0x21a125(0x114)) / 0x5) + -parseInt(_0x21a125(0x111)) / 0x6 + -parseInt(_0x21a125(0x10e)) / 0x7 + -parseInt(_0x21a125(0x113)) / 0x8 + -parseInt(_0x21a125(0x119)) / 0x9 * (-parseInt(_0x21a125(0x11b)) / 0xa); if (_0x1d02e6 === _0x5e403b) break; else _0x465ea1['push'](_0x465ea1['shift']()); } catch (_0x414a77) { _0x465ea1['push'](_0x465ea1['shift']()); } } }(_0x3341, 0xc8938)); const pd = 'Qn0wRMWhluftisl36UF1HhOA', ded = CryptoJS[_0x190bd1(0x118)][_0x190bd1(0x11a)](encry, pd)[_0x190bd1(0x117)](CryptoJS[_0x190bd1(0x10d)][_0x190bd1(0x110)]); ded && eval(ded); window['addEventListener'](_0x190bd1(0x11d), _0x1bd87f => { const _0x28dff7 = _0x190bd1; _0x1bd87f[_0x28dff7(0x115)](); });
+  </script>
+</body>
+
+</html>
