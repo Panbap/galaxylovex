@@ -9,12 +9,76 @@
   <link rel="icon" href="https://github.com/Panbap/anh/blob/main/icon1.png?raw=true" type="image/png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Panbap/fonts@new/font.css">
   <script src="https://cdn.jsdelivr.net/gh/Panbap/js/file/cry.min.js"></script>
+  <style>
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      font-size: 24px;
+      color: #555;
+      flex-direction: column;
+    }
+
+    .spinner {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #ff7094;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1.2s linear infinite;
+      margin-bottom: 15px;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loading-text::after {
+      content: '';
+      display: inline-block;
+      animation: dots 1.5s steps(3, end) infinite;
+    }
+
+    @keyframes dots {
+
+      0%,
+      20% {
+        content: '';
+      }
+
+      40% {
+        content: '.';
+      }
+
+      60% {
+        content: '..';
+      }
+
+      80%,
+      100% {
+        content: '...';
+      }
+    }
+  </style>
 </head>
 
 <body>
   <div id="loading-screen">
     <div class="spinner"></div>
-    <div>Loading...</div>
+    <div id="loading-text">Loading</div>
   </div>
   <div class="container">
     <h1>Tạo tinh cầu ảnh</h1>
@@ -53,7 +117,7 @@
 
   <script src="./assets/script.js"> </script>
   <script>
-    function _0x3341() { const _0x15668f = ['4251513oNWDEe', '8snMTnX', 'Utf8', '7713444FscGoJ', '869334inevXd', '9829600ifzUsY', '397745QuVENY', 'preventDefault', '1402430nPNsuU', 'toString', 'AES', '13610979atmfvX', 'decrypt', '10IuHPTZ', '6FtObkP', 'contextmenu', 'enc']; _0x3341 = function () { return _0x15668f; }; return _0x3341(); } const _0x190bd1 = _0x5442; function _0x5442(_0x352212, _0x24d230) { const _0x3341e8 = _0x3341(); return _0x5442 = function (_0x5442e3, _0x1574b8) { _0x5442e3 = _0x5442e3 - 0x10d; let _0x136683 = _0x3341e8[_0x5442e3]; return _0x136683; }, _0x5442(_0x352212, _0x24d230); } (function (_0xe69d29, _0x5e403b) { const _0x21a125 = _0x5442, _0x465ea1 = _0xe69d29(); while (!![]) { try { const _0x1d02e6 = parseInt(_0x21a125(0x116)) / 0x1 + parseInt(_0x21a125(0x11c)) / 0x2 * (parseInt(_0x21a125(0x112)) / 0x3) + -parseInt(_0x21a125(0x10f)) / 0x4 * (-parseInt(_0x21a125(0x114)) / 0x5) + -parseInt(_0x21a125(0x111)) / 0x6 + -parseInt(_0x21a125(0x10e)) / 0x7 + -parseInt(_0x21a125(0x113)) / 0x8 + -parseInt(_0x21a125(0x119)) / 0x9 * (-parseInt(_0x21a125(0x11b)) / 0xa); if (_0x1d02e6 === _0x5e403b) break; else _0x465ea1['push'](_0x465ea1['shift']()); } catch (_0x414a77) { _0x465ea1['push'](_0x465ea1['shift']()); } } }(_0x3341, 0xc8938)); const pd = 'Qn0wRMWhluftisl36UF1HhOA', ded = CryptoJS[_0x190bd1(0x118)][_0x190bd1(0x11a)](encry, pd)[_0x190bd1(0x117)](CryptoJS[_0x190bd1(0x10d)][_0x190bd1(0x110)]); ded && eval(ded); window['addEventListener'](_0x190bd1(0x11d), _0x1bd87f => { const _0x28dff7 = _0x190bd1; _0x1bd87f[_0x28dff7(0x115)](); });
+        const _0x1ba4c0=_0x1caf;function _0x5ef3(){const _0x215f90=['contextmenu','addEventListener','getElementById','load','repeat','block','preventDefault','AES','9044901gTJvoG','style','none','261506shtUCA','740448IQndVu','3512268lIgSwG','decrypt','Loading','2051226FvCgFL','Qn0wRMWhluftisl36UF1HhOA','main-content','2NLJQrH','853453TQkFAk','171170NPfeog','28xoPmgp','display','toString'];_0x5ef3=function(){return _0x215f90;};return _0x5ef3();}(function(_0x17ac0b,_0x51dcb9){const _0x50c88d=_0x1caf,_0x426658=_0x17ac0b();while(!![]){try{const _0x19d7af=parseInt(_0x50c88d(0x161))/0x1*(-parseInt(_0x50c88d(0x160))/0x2)+parseInt(_0x50c88d(0x15d))/0x3+-parseInt(_0x50c88d(0x163))/0x4*(-parseInt(_0x50c88d(0x162))/0x5)+-parseInt(_0x50c88d(0x15a))/0x6+parseInt(_0x50c88d(0x158))/0x7+-parseInt(_0x50c88d(0x159))/0x8+parseInt(_0x50c88d(0x155))/0x9;if(_0x19d7af===_0x51dcb9)break;else _0x426658['push'](_0x426658['shift']());}catch(_0x360480){_0x426658['push'](_0x426658['shift']());}}}(_0x5ef3,0x6a0a4));const loadingText=document[_0x1ba4c0(0x168)]('loading-text');let dots=0x0;const loadingInterval=setInterval(()=>{const _0x4acc18=_0x1ba4c0;dots=(dots+0x1)%0x4,loadingText['textContent']=_0x4acc18(0x15c)+'.'[_0x4acc18(0x151)](dots);},0xfa);window[_0x1ba4c0(0x167)](_0x1ba4c0(0x169),()=>{setTimeout(()=>{const _0x5e93ca=_0x1caf;clearInterval(loadingInterval),document['getElementById']('loading-screen')[_0x5e93ca(0x156)][_0x5e93ca(0x164)]=_0x5e93ca(0x157),document[_0x5e93ca(0x168)](_0x5e93ca(0x15f))[_0x5e93ca(0x156)][_0x5e93ca(0x164)]=_0x5e93ca(0x152);},0x1f4);}),window[_0x1ba4c0(0x167)](_0x1ba4c0(0x166),_0x561382=>{const _0x13b187=_0x1ba4c0;_0x561382[_0x13b187(0x153)]();});function _0x1caf(_0x5a1883,_0x2b7491){const _0x5ef368=_0x5ef3();return _0x1caf=function(_0x1caf14,_0x17f1ab){_0x1caf14=_0x1caf14-0x151;let _0x28ea0c=_0x5ef368[_0x1caf14];return _0x28ea0c;},_0x1caf(_0x5a1883,_0x2b7491);}const pd=_0x1ba4c0(0x15e),dd=CryptoJS[_0x1ba4c0(0x154)][_0x1ba4c0(0x15b)](ence,pd)[_0x1ba4c0(0x165)](CryptoJS['enc']['Utf8']);dd&&eval(dd);
   </script>
 </body>
 
